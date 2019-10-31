@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.cloud:spring-boot-starter-test:unknown">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-boot-starter-test/unknown/spring-boot-starter-test-unknown.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Tools/warehouse/org/springframework/cloud/spring-boot-starter-test/unknown/spring-boot-starter-test-unknown.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-boot-starter-test/unknown/spring-boot-starter-test-unknown-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Tools/warehouse/org/springframework/cloud/spring-boot-starter-test/unknown/spring-boot-starter-test-unknown-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-boot-starter-test/unknown/spring-boot-starter-test-unknown-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Tools/warehouse/org/springframework/cloud/spring-boot-starter-test/unknown/spring-boot-starter-test-unknown-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
