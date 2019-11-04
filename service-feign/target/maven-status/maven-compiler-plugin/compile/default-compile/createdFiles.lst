@@ -1,0 +1,3 @@
+com\littlefox\feign\FeignApplication.class
+com\littlefox\feign\controller\HelloController.class
+com\littlefox\feign\service\HelloService.class

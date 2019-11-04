@@ -6,16 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="server-eureka" />
+        <module name="service-eureka" />
+        <module name="service-config" />
+        <module name="service-feign" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="server-eureka" target="11" />
-      <module name="spring-cloud-example" target="11" />
+      <module name="service-config" target="8" />
+      <module name="service-eureka" target="8" />
+      <module name="service-feign" target="8" />
+      <module name="spring-cloud-example" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="service-config" options="-parameters" />
+      <module name="service-eureka" options="-parameters" />
+      <module name="service-feign" options="-parameters" />
       <module name="spring-cloud-example" options="" />
     </option>
   </component>
