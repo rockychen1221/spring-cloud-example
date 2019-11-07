@@ -8,6 +8,7 @@
         <module>service-config</module>
         <module>service-feign</module>
         <module>service-ribbon</module>
+        <module>service-admin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
