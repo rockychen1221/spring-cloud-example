@@ -11,6 +11,7 @@
         <module>service-admin</module>
         <module>service-gateway</module>
         <module>service-eureka-client</module>
+        <module>service-admin-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

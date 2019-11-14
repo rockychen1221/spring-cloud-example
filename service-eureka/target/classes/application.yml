@@ -8,3 +8,12 @@ eureka:
   client:
     register-with-eureka: false  # 当前服务不需要到Eureka Server上注册
     fetch-registry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

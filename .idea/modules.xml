@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/service-admin/service-admin.iml" filepath="$PROJECT_DIR$/service-admin/service-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-admin-client/service-admin-client.iml" filepath="$PROJECT_DIR$/service-admin-client/service-admin-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-config/service-config.iml" filepath="$PROJECT_DIR$/service-config/service-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-eureka/service-eureka.iml" filepath="$PROJECT_DIR$/service-eureka/service-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-eureka-client/service-eureka-client.iml" filepath="$PROJECT_DIR$/service-eureka-client/service-eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-feign/service-feign.iml" filepath="$PROJECT_DIR$/service-feign/service-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-gateway/service-gateway.iml" filepath="$PROJECT_DIR$/service-gateway/service-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-ribbon/service-ribbon.iml" filepath="$PROJECT_DIR$/service-ribbon/service-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-example.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-example.iml" />
     </modules>
   </component>

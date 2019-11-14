@@ -1,9 +1,9 @@
 server:
-  port: 8769
+  port: 9102
 
 spring:
   application:
-    name: EUREKACLIENT #在Eureka Server注册的服务名
+    name: service-admin-client #在Eureka Server注册的服务名
   security:
     user:
       name: admin
@@ -11,15 +11,17 @@ spring:
 
 eureka:
   instance:
-    non-secure-port: ${server.port:8080} #非SSL端口，若环境变量中server.port有值，则使用环境变量的值，没有则使用8080
+    non-secure-port: ${server.port:8888} #非SSL端口，若环境变量中server.port有值，则使用环境变量的值，没有则使用8080
     metadata-map:
       instanceId: ${spring.application.name}:${random.value} #配置在Eureka Server的实例ID
       user:
         name: ${spring.security.user.name}
         password: ${spring.security.user.password}
+
   client:
     service-url:
       defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/ #Eureka 客户端设置Eureka Server的地址
+
 
 management:
   endpoints:
