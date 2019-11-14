@@ -1,16 +1,17 @@
 package com.littlefox.feign.controller;
 
 import com.littlefox.feign.service.HelloService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
+
 @RestController
-@RequestMapping("/s")
+@RequestMapping("/feign")
 public class HelloController {
-    @Autowired
+    @Resource
     HelloService helloService;
 
-    @GetMapping(value = "/hi")
+    @RequestMapping( value = "/hello", method = RequestMethod.GET )
     @ResponseBody
     public String sayHi(@RequestParam String name){
         return helloService.sayHiFromClientOne(name);
