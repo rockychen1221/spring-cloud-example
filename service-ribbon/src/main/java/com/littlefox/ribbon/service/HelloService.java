@@ -9,7 +9,8 @@ public class HelloService {
     @Autowired
     RestTemplate restTemplate;
 
-    public String helloService() {
-        return restTemplate.getForObject("http://EUREKACLIENT/",String.class);
+    public String helloService(String name) {
+
+        return restTemplate.getForObject("http://EUREKACLIENT/hi?name="+name,String.class);
     }
 }

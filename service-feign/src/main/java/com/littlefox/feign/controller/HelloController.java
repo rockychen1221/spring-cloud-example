@@ -12,7 +12,6 @@ public class HelloController {
     HelloService helloService;
 
     @RequestMapping( value = "/hello", method = RequestMethod.GET )
-    @ResponseBody
     public String sayHi(@RequestParam String name){
         return helloService.sayHiFromClientOne(name);
     }

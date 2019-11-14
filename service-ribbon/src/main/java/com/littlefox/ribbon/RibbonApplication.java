@@ -15,7 +15,6 @@ import org.springframework.web.client.RestTemplate;
  * @date 2019-11-06 11:43
  */
 @SpringBootApplication
-@EnableDiscoveryClient
 @EnableEurekaClient
 @EnableHystrix
 public class RibbonApplication {
