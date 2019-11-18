@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019-11-14 15:26
  */
 @RestController
-public class ClientController {
+public class EurekaClientController {
 
     @Value("${server.port}")
     private String port;
