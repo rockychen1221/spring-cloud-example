@@ -1,0 +1,36 @@
+server:
+  port: 9411
+
+spring:
+  application:
+    name: spring-cloud-zipkin
+  security:
+    user:
+      name: admin
+      password: 888888
+
+eureka:
+  instance:
+    non-secure-port: ${server.port:8080} #非SSL端口，若环境变量中server.port有值，则使用环境变量的值，没有则使用8080
+    metadata-map:
+      instanceId: ${spring.application.name}:${random.value} #配置在Eureka Server的实例ID
+      user:
+        name: ${spring.security.user.name}
+        password: ${spring.security.user.password}
+  client:
+    service-url:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/ #Eureka 客户端设置Eureka Server的地址
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: env,metrics
+  endpoint:
+    health:
+      show-details: always
+#  metrics:
+#    web:
+#      server:
+#        auto-time-requests: false
