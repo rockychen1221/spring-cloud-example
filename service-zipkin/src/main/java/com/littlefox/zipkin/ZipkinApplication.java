@@ -1,4 +1,4 @@
-package com.littlefox;
+package com.littlefox.zipkin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,10 +13,10 @@ import zipkin2.server.internal.EnableZipkinServer;
 @EnableZipkinServer
 @EnableEurekaClient
 @SpringBootApplication
-public class SpringCloudZipkinApplication {
+public class ZipkinApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudZipkinApplication.class,args);
+        SpringApplication.run(ZipkinApplication.class,args);
     }
 
 }

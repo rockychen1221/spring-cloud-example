@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-config" />
-        <module name="service-admin-client" />
         <module name="service-eureka-client" />
         <module name="service-feign" />
+        <module name="service-zipkin" />
         <module name="service-eureka" />
         <module name="service-ribbon" />
         <module name="service-gateway" />
@@ -25,6 +25,7 @@
       <module name="service-feign" target="8" />
       <module name="service-gateway" target="8" />
       <module name="service-ribbon" target="8" />
+      <module name="service-zipkin" target="8" />
       <module name="spring-cloud-example" target="8" />
     </bytecodeTargetLevel>
   </component>
@@ -38,6 +39,7 @@
       <module name="service-feign" options="-parameters" />
       <module name="service-gateway" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
+      <module name="service-zipkin" options="-parameters" />
       <module name="spring-cloud-example" options="" />
     </option>
   </component>
